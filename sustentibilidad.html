@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sustentabilidad - Conexa</title>
+  <link rel="stylesheet" href="sustentabilidad.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Estilos del video de fondo */
+    .video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      background-color: black;
+      z-index: -1;
+    }
+
+    /* Estilos del contenido */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    header, section, footer {
+      max-width: 800px;
+      margin: 30px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .volver {
+      color: #a3e635;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .volver:hover {
+      color: #4ade80;
+    }
+
+    /* Frase central con imagen */
+    .frase-central {
+      text-align: center;
+      margin: 60px 0;
+      padding: 0;
+      color: #a3e635;
+      font-size: 1.8em;
+    }
+
+    .frase-central img {
+      max-width: 500px;
+      width: 45%;
+      height: auto;
+      margin-bottom: 20px;
+      border: none;
+      box-shadow: none;
+      background: none;
+    }
+
+    /* Nueva clase para imagen pequeña */
+    .imagen-pequeña {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+    }
+
+    .boton-articulo {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    .boton-articulo button {
+      background-color: #a3e635;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    .boton-articulo button:hover {
+      background-color: #4ade80;
+    }
+
+    .info-oculta {
+      display: none;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Video de fondo -->
+  <video class="video" autoplay muted loop>
+    <source src="video/ave.mp4"video/mp4" />
+  </video>
+
+  <!-- Contenido -->
+  <header>
+    🌿 Sustentabilidad en Conexa 🌿
+  </header>
+
+  <section>
+
+    <div class="frase-central">
+      <img src="imagenes/abeja.jpg" alt="Imagen revolución" />
+      <p><strong>Nunca habrá revolución sin evolución de conciencia depende de ti la diferencia</strong></p>
+    </div>
+
+    <div class="green-box">
+      <p>
+        En <strong>Conexa</strong>, creemos firmemente que el progreso tecnológico debe ir de la mano con el respeto por el medio ambiente. Como empresa dedicada al soporte técnico en redes, nos comprometemos a implementar prácticas sustentables que reduzcan nuestro impacto ecológico 🌎.
+      </p>
+    </div>
+
+    <!-- Botón Informativo con mini-artículo -->
+    <div class="boton-articulo">
+      <button id="btnDato">📊 Ver dato impactante</button>
+    </div>
+
+    <!-- Imagen pequeña debajo del botón para que no salga gigante -->
+    <img src="imagenes/extincion.jpg" alt="Imagen revolución" class="imagen-pequeña" />
+
+    <div id="info-articulo" class="info-oculta">
+      <h3> Los desechos electrónicos, como cables y componentes de redes, pueden causar lesiones a la fauna. Se ha documentado que aves y pequeños mamíferos quedan atrapados en estos materiales, lo que puede resultar en heridas graves o la muerte.</h3>
+      <p>En <strong>Conexa</strong> trabajamos activamente para reducir nuestro impacto ambiental:</p>
+      <ul>
+        <li>🌿 Reciclamos equipos en desuso.</li>
+        <li>💡 Ahorramos energía en nuestras oficinas.</li>
+        <li>🚌 Promovemos el teletrabajo para evitar traslados contaminantes.</li>
+      </ul>
+    </div>
+
+    <h2>♻️ ¿Qué hacemos por el planeta?</h2>
+    <p>
+      ✔️ Reutilizamos y reciclamos equipos electrónicos siempre que sea posible.<br />
+      ✔️ Optimizamos el uso de energía en nuestros centros de trabajo.<br />
+      ✔️ Promovemos el teletrabajo para reducir traslados contaminantes.<br />
+      ✔️ Usamos proveedores que también practican la sustentabilidad.
+    </p>
+
+    <h2>🌱 Nuestra misión verde</h2>
+    <p>
+      Fomentar una cultura digital responsable, donde la tecnología beneficie tanto al ser humano como al entorno natural. Cada red que instalamos es una oportunidad para conectar al mundo sin desconectarnos de la Tierra.
+    </p>
+
+    <h2>💡 Ideas futuras</h2>
+    <p>
+      💚 Implementar paneles solares en oficinas.<br />
+      💚 Lanzar campañas internas de ahorro energético.<br />
+      💚 Invertir en capacitación ambiental para nuestro equipo técnico.
+    </p>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="volver">← Volver al inicio</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Conexa | Soporte Técnico en Redes con Corazón Verde 💚
+  </footer>
+
+  <script>
+    // Este código se asegura que el botón funcione sin problemas
+    document.getElementById("btnDato").addEventListener("click", () => {
+      const info = document.getElementById("info-articulo");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    });
+  </script>
+
+</body>
+</html>
